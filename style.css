@@ -82,8 +82,8 @@ h1, h2, h3, .study__num, .stat b { font-family: "Montserrat", "Segoe UI", sans-s
 
 .stats {
   margin-top: 60px;
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
-  max-width: 820px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+  max-width: 640px;
 }
 .stat {
   background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
@@ -259,7 +259,7 @@ h1, h2, h3, .study__num, .stat b { font-family: "Montserrat", "Segoe UI", sans-s
   .hero { min-height: auto; padding: 110px 0 50px; }
   .hero h1 { font-size: 34px; }
   .hero__text { font-size: 17px; }
-  .stats { grid-template-columns: repeat(2, 1fr); margin-top: 40px; }
+  .stats { grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 40px; }
   .stat b { font-size: 22px; }
 
   .section { padding: 64px 0; }
