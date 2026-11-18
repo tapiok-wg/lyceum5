@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профессиональный лицей №5 — Бишкек</title>
+  <meta name="description" content="Бесплатное профессиональное образование в Бишкеке: автоэлектрик, сантехник, электромонтажник, мебельщик, отделочник, сварщик.">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== ШАПКА САЙТА ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <img class="logo__img" src="images/logo.jpg" alt="Логотип лицея №5">
+        <span class="logo__text">Профессиональный<br>лицей №5</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="#professions">Профессии</a>
+        <a href="#study">Обучение</a>
+        <a href="#gallery">Практика</a>
+        <a href="#documents">Поступление</a>
+        <a href="#contacts">Контакты</a>
+        <a href="tel:+996312543372" class="nav__call">📞 Позвонить</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== ГЛАВНЫЙ БЛОК =====
+       Фон — фото здания (images/building.jpg), задаётся в style.css в .hero -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="hero__since">Кесиптик лицейи №5 · Бишкек · с 1946 года</p>
+        <h1>Получи <span class="accent">востребованную профессию</span> бесплатно</h1>
+        <p class="hero__text">Образование, профессия и новые возможности. Учим на практике и помогаем с трудоустройством.</p>
+        <div class="hero__buttons">
+          <a href="#documents" class="btn btn--primary">Как поступить →</a>
+          <a href="#professions" class="btn btn--glass">Профессии</a>
+        </div>
+      </div>
+
+      <!-- Цифры под главным блоком -->
+      <div class="stats">
+        <div class="stat"><b>1946</b><span>год основания</span></div>
+        <div class="stat"><b>6</b><span>профессий</span></div>
+        <div class="stat"><b>0 сом</b><span>за обучение</span></div>
+        <div class="stat"><b>10 мес.</b><span>после 11 класса</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ПРОФЕССИИ =====
+       Чтобы добавить профессию: скопируй один блок <div class="card">...</div> и поменяй текст -->
+  <section class="section" id="professions">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Чему мы учим</p>
+        <h2>Профессии</h2>
+      </div>
+      <div class="grid">
+        <div class="card reveal"><div class="card__icon">🚗</div><h3>Автоэлектрик</h3><p>Ремонт и обслуживание электрооборудования автомобилей.</p></div>
+        <div class="card reveal"><div class="card__icon">🚰</div><h3>Сантехник</h3><p>Монтаж и ремонт водопровода, отопления и канализации.</p></div>
+        <div class="card reveal"><div class="card__icon">⚡</div><h3>Электромонтажник</h3><p>Прокладка проводки и монтаж электрооборудования.</p></div>
+        <div class="card reveal"><div class="card__icon">🪑</div><h3>Мебельщик</h3><p>Изготовление и сборка мебели.</p></div>
+        <div class="card reveal"><div class="card__icon">🖌️</div><h3>Отделочник</h3><p>Штукатурка, покраска, плитка и другие отделочные работы.</p></div>
+        <div class="card reveal"><div class="card__icon">🔥</div><h3>Сварщик</h3><p>Сварка металлических конструкций.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== СРОКИ ОБУЧЕНИЯ ===== -->
+  <section class="section section--dark" id="study">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Сроки</p>
+        <h2>Сколько учиться</h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="study reveal"><span class="study__num">2 года</span><p>после 9 класса</p></div>
+        <div class="study reveal"><span class="study__num">10 месяцев</span><p>после 11 класса</p></div>
+        <div class="study reveal"><span class="study__num">Курсы</span><p>краткосрочные курсы по всем специальностям</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ГАЛЕРЕЯ: УЧИМСЯ НА ПРАКТИКЕ =====
+       Чтобы добавить фото: положи файл в папку images и скопируй один блок <figure>...</figure> -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Мастерские</p>
+        <h2>Учимся на практике</h2>
+      </div>
+      <div class="gallery">
+        <figure class="reveal"><img src="images/welding.jpg" alt="Сварщик за работой" loading="lazy"><figcaption>Сварщик</figcaption></figure>
+        <figure class="reveal"><img src="images/auto.jpg" alt="Диагностика автомобиля" loading="lazy"><figcaption>Автоэлектрик</figcaption></figure>
+        <figure class="reveal"><img src="images/plumbing.jpg" alt="Монтаж труб с мастером" loading="lazy"><figcaption>Сантехник</figcaption></figure>
+        <figure class="reveal"><img src="images/furniture.jpg" alt="Работа с деревом" loading="lazy"><figcaption>Мебельщик</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ПРЕИМУЩЕСТВА ===== -->
+  <section class="section section--gray" id="benefits">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Почему мы</p>
+        <h2>И это ещё не всё!</h2>
+      </div>
+      <div class="benefits">
+        <div class="benefit reveal"><span>🍽️</span><p>Бесплатное питание</p></div>
+        <div class="benefit reveal"><span>🇰🇷</span><p>Бесплатные курсы корейского языка</p></div>
+        <div class="benefit reveal"><span>🛠️</span><p>Интересные практические занятия</p></div>
+        <div class="benefit reveal"><span>🏢</span><p>Производственная практика</p></div>
+        <div class="benefit reveal"><span>💼</span><p>Помощь в трудоустройстве после окончания</p></div>
+      </div>
+      <p class="note reveal">Здесь не только получают знания, но и осваивают профессию на практике, приобретают полезные навыки и готовятся к будущей работе.</p>
+    </div>
+  </section>
+
+  <!-- ===== ДОКУМЕНТЫ ДЛЯ ПОСТУПЛЕНИЯ ===== -->
+  <section class="section" id="documents">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Поступление</p>
+        <h2>Документы для поступления</h2>
+      </div>
+      <ol class="docs">
+        <li class="reveal">Свидетельство об образовании (оригинал)</li>
+        <li class="reveal">Заявление на имя директора</li>
+        <li class="reveal">Копия свидетельства о рождении</li>
+        <li class="reveal">Копия паспорта родителей</li>
+        <li class="reveal">Медицинская справка 086</li>
+        <li class="reveal">Справка с места жительства</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== ПРИЗЫВ ПОСТУПАТЬ ===== -->
+  <section class="cta">
+    <div class="container cta__inner reveal">
+      <div>
+        <h2>Приходи учиться в лицей №5!</h2>
+        <p>Есть вопросы о поступлении? Позвони в приёмную — всё расскажем.</p>
+      </div>
+      <a href="tel:+996312543372" class="btn btn--dark">📞 +996 (312) 54-33-72</a>
+    </div>
+  </section>
+
+  <!-- ===== КОНТАКТЫ И КАРТА 2ГИС ===== -->
+  <section class="section section--gray" id="contacts">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Как нас найти</p>
+        <h2>Контакты</h2>
+      </div>
+      <div class="contacts-wrap">
+        <div class="contacts reveal">
+          <p>📍 <b>Адрес:</b><br>г. Бишкек, ул. Жусупа Абдрахманова, 278<br>Первомайский район, 720005</p>
+          <p>📞 <b>Приёмная:</b><br><a href="tel:+996312543372">+996 (312) 54-33-72</a></p>
+          <p>📞 <b>Телефон:</b><br><a href="tel:+996312591874">+996 (312) 59-18-74</a></p>
+          <p>📱 <b>Сотовый:</b><br><a href="tel:+996705194605">+996 (705) 19-46-05</a></p>
+          <p>📸 <b>Instagram:</b><br><a href="https://www.instagram.com/5kesiptiklicey/" target="_blank" rel="noopener">@5kesiptiklicey</a></p>
+          <p>🕗 <b>Время работы:</b><br>08:00 – 17:00</p>
+          <a class="btn btn--primary" href="https://2gis.kg/bishkek/firm/70000001019332797" target="_blank" rel="noopener">Открыть в 2ГИС / маршрут</a>
+        </div>
+
+        <!-- Карта 2ГИС (виджет). id лицея в 2ГИС: 70000001019332797 -->
+        <div class="map reveal">
+          <iframe
+            title="Профессиональный лицей №5 на карте 2ГИС"
+            src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A42.859822%2C%22lon%22%3A74.610053%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22bishkek%22%7D%2C%22org%22%3A%2270000001019332797%22%7D"
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ПОДВАЛ ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="images/logo.jpg" alt="">
+        <p>Профессиональный лицей №5<br><small>Кесиптик лицейи №5 · с 1946 года</small></p>
+      </div>
+      <p class="footer__links">
+        <a href="tel:+996705194605">+996 705 194 605</a>
+        <a href="https://www.instagram.com/5kesiptiklicey/" target="_blank" rel="noopener">Instagram @5kesiptiklicey</a>
+      </p>
+      <p class="footer__copy">© <span id="year"></span> Профессиональный лицей №5, Бишкек</p>
+    </div>
+  </footer>
+
+  <!-- Кнопка «наверх» -->
+  <a href="#" class="to-top" id="toTop" aria-label="Наверх">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
